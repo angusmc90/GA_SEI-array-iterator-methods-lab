@@ -18,7 +18,7 @@ const inventors = [
   
   // Array.prototype.filter()
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
-  
+  console.log("-- QUESTION 1 --")
   const fifteenHundreds = inventors.filter((e) => e.year >= 1500 && e.year < 1600)
   console.log(fifteenHundreds)
   
@@ -26,8 +26,14 @@ const inventors = [
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
-  
-  
+  console.log("-- QUESTION 2 --")
+  const justNames = inventors.map((inventor) => {
+    const govtNames = [];
+    govtNames.first = inventor.first;
+    govtNames.last = inventor.last;
+    return govtNames;
+  })
+  console.log(justNames)
   
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
