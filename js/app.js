@@ -58,7 +58,17 @@ const inventors = [
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
+  console.log("-- QUESTION 5 --")
+ /*
   
+  ANGUS TO COME BACK TO THIS
+
+  */
+  const alive = inventors.reduce((a,b) => {
+    const timeAlive = a.last - a.year;
+    return timeAlive + b
+  })
+  console.log(alive)
   
   
   
