@@ -37,8 +37,18 @@ const inventors = [
   
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
+  console.log("-- QUESTION 3 --")
+  /*
   
-  
+  ANGUS TO COME BACK TO THIS
+
+  */
+  const yearSort = inventors.sort((a, b) => {
+    const byYear = [];
+    byYear.a = (a.year < b.year) ? 1 : (a.year < b.year) ? -1 : 0;
+    return byYear
+  })
+  console.log(yearSort)
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
