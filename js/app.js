@@ -52,8 +52,9 @@ const inventors = [
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
-  
-  
+  console.log("-- QUESTION 4 --")
+  const objAda = inventors.find((inventor) => inventor.first === 'Ada')
+  console.log(objAda)
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
