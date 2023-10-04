@@ -38,17 +38,15 @@ const inventors = [
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
   console.log("-- QUESTION 3 --")
-  /*
-  
-  ANGUS TO COME BACK TO THIS
-
+  /* 
+  ANGUS - i need help reviewing this
   */
-  const yearSort = inventors.sort((a, b) => {
-    const byYear = [];
-    byYear.a = (a.year < b.year) ? 1 : (a.year < b.year) ? -1 : 0;
-    return byYear
-  })
-  console.log(yearSort)
+  function yearSort (a,b) {
+    return a.year - b.year;
+  }
+  const sortedArr = inventors.sort(yearSort)
+
+  console.log(sortedArr)
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
@@ -59,14 +57,10 @@ const inventors = [
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
   console.log("-- QUESTION 5 --")
- /*
-  
-  ANGUS TO COME BACK TO THIS
-
-  */
+  let totalYearsOnEarth = 0;
   const alive = inventors.reduce((a,b) => {
-    const timeAlive = a.last - a.year;
-    return timeAlive + b
+    a = b.passed - b.year, 0;
+    return a + b
   })
   console.log(alive)
   
@@ -109,8 +103,12 @@ const inventors = [
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   
   console.log("-- QUESTION 7 --")
-  const vehichleCount = data.reduce((a) => {
-    x
+  /*
+  ANGUS NOTE - I don't think I understand the reduce method
+  */
+  const vehichleCount = data.reduce((count, car) => {
+    count[car] == count[car] ? count[car] += 1 : 1;
+    return count
    })
    console.log(vehichleCount)
   
