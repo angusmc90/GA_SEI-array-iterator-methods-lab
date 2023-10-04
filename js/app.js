@@ -89,8 +89,14 @@ const inventors = [
   // Array.prototype.map()
   // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
   // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
-  
-  
+
+  console.log("-- QUESTION 6 --")
+  const firstLast = people.map((a) => {
+    const lastFirst = a.split(", ");
+    lastFirst.reverse();
+    return lastFirst.join();
+   })
+   console.log(firstLast)
   
   
   const data = [
@@ -102,6 +108,11 @@ const inventors = [
   // 7. Count the number of instances for each of the data items. The reduce should return an object where the keys are 'car', 'truck', etc. and the values are the count.
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   
+  console.log("-- QUESTION 7 --")
+  const vehichleCount = data.reduce((a) => {
+    x
+   })
+   console.log(vehichleCount)
   
   
   const devs = [
