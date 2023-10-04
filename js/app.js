@@ -107,9 +107,9 @@ const inventors = [
   ANGUS NOTE - I don't think I understand the reduce method
   */
   const vehichleCount = data.reduce((count, car) => {
-    count[car] == count[car] ? count[car] += 1 : 1;
-    return count
-   })
+    count[car] == count[car] ? count[car] + 1 : 1;
+    return count;
+   }, {});
    console.log(vehichleCount)
   
   
