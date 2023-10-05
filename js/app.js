@@ -33,6 +33,10 @@ const inventors = [
     govtNames.last = inventor.last;
     return govtNames;
   })
+  /*
+  this is coming back as an array of arrays?
+
+  */
   console.log(justNames)
   
   // Array.prototype.sort()
@@ -57,6 +61,9 @@ const inventors = [
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
   console.log("-- QUESTION 5 --")
+  /* 
+  Angus Help
+  */
   let totalYearsOnEarth = 0;
   const alive = inventors.reduce((a,b) => {
     a = b.passed - b.year, 0;
@@ -87,7 +94,7 @@ const inventors = [
   console.log("-- QUESTION 6 --")
   const firstLast = people.map((a) => {
     const lastFirst = a.split(", ");
-    lastFirst.reverse();
+    lastFirst.reverse(); //how to remove comma?
     return lastFirst.join();
    })
    console.log(firstLast)
