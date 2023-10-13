@@ -134,6 +134,17 @@ const inventors = [
   
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
+  let is19Arr=[];
+
+  function checkFor19(arr) {
+    let the19List = [];
+    arr.forEach((e) => {
+      let thisOnj = e;
+      if (2023 - thisObj.year === 19) {
+        is19Arr.push(thisObj);
+      }
+    })
+  };
   
   
   
@@ -147,12 +158,43 @@ const inventors = [
   
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
+
+  function findID(arr) {
+    let comment ='';
+    arr.forEach((e) => {
+      let thisObj = e;
+      if (thisObj.id === 823423) {
+        comment = thisObj.comment;
+      }
+    }
+    )
+    return comment
+  }
+  console.log(findID(comments))
   
   
   
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
-  
+
+
+// function findComm(e){
+//   let thisObj = e;
+//   let indexNum;
+//   thisObj.forEach((e) => {
+//     if (e.id===123523){
+//       indexNum = e.indexOf();
+//     }
+//   })
+//   return num11Answer = indexNum
+// }
+
+// findComm(comments);
+// console.log(num11Answer)
+
+commments.indexOf()
+
+console.log()
   
   
   
