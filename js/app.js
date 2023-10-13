@@ -178,23 +178,15 @@ const inventors = [
   // 11. Find the index of the comment with an id of 123523
 
 
-// function findComm(e){
-//   let thisObj = e;
-//   let indexNum;
-//   thisObj.forEach((e) => {
-//     if (e.id===123523){
-//       indexNum = e.indexOf();
-//     }
-//   })
-//   return num11Answer = indexNum
-// }
+function findComm(e){
+  let thisArr = e;
+  let indexNum;
+  thisArr.forEach((e) => {
+    if (e.id===123523){
+      indexNum = thisArr.indexOf(e);
+    }
+  })
+  return indexNum
+}
 
-// findComm(comments);
-// console.log(num11Answer)
-
-commments.indexOf()
-
-console.log()
-  
-  
-  
+console.log(findComm(comments))
